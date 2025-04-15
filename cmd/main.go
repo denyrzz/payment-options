@@ -15,5 +15,5 @@ func main() {
 	uc := usecase.NewPaymentUsecase(repo)
 	httpDelivery.NewPaymentHandler(e, uc)
 
-	e.Logger.Fatal(e.Start(":8081"))
+	e.Logger.Fatal(e.Start(":8082"))
 }

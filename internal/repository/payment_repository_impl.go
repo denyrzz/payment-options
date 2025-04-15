@@ -22,6 +22,7 @@ func (r *paymentRepo) CallOVO() models.PaymentMethod {
 }
 
 func (r *paymentRepo) CallDANA() models.PaymentMethod {
+	time.Sleep(3 * time.Second) 
 	return models.PaymentMethod{
 		Account: "6288xx",
 		Status:  "Active",
